@@ -1,0 +1,376 @@
+---
+title: "Clean Highest Degree"
+author: "Aaron R. Williams -- Urban Institute"
+date: today
+format: 
+  html:
+    toc: true
+    embed-resources: true
+editor_options: 
+  chunk_output_type: console
+---
+
+# Introduction
+
+This script cleans responses from a question about the highest degree attained for non-expired paying members of the [American Economic Association](https://www.aeaweb.org/), who opted into both the Directory of Members and receiving surveys sent by the association.
+
+Data were extracted from internal systems. Members complete the “Directory of Members” form in order to be included in the directory, which used to be like a telephone book in the old days. They can choose to receive surveys sent out by the AEA.
+
+The data contain 3,813 responses for the highest degree attained question. It  reflects degree most recently completed as recorded in the directory, which should almost always yield the highest, but in (rare or maybe non-existing) cases where someone switches fields of study, is not guaranteed.  The “degree” field is free text and contains all manor of notation. Free text was extracted, and normalized by code present in this script.
+
+# Setup
+
+```{r}
+#| message: false
+
+library(tidyverse)
+library(here)
+library(readxl)
+
+```
+
+```{r}
+highest_degree <- read_excel(
+  here::here("data", "raw", "memberData.xlsx"), 
+  sheet = "Highest Degree",
+  col_names = c("degree", "n")
+)
+
+```
+
+# Clean Highest Degree
+
+The field for higest degree was open response and yielded an inconsistent array of responses. We clean up the responses with a few different steps:
+
+1. Text preprocessing
+    a. Convert all text to lower case
+    b. Remove symbols, delete common prepositions, and remove the word economics. 
+2. Manually clean clear cases
+3. Identify students without PhDs
+4. Simplify degrees 
+5. Clean up international degrees
+6. Make decisions about tough cases
+7. Coarsen to groups of interest
+
+```{r}
+#' Simplify a text response that matches a pattern
+#'
+#' @param string The vector containing responses
+#' @param pattern A regular expression to match strings to change
+#' @param replacement A new response
+#'
+#' @return A vector with cleaned responses
+#' 
+simplify_response <- function(string, pattern, replacement) {
+  
+  print(paste("Observations changed:", sum(str_detect(string = string, pattern = pattern))))
+  
+  if_else(
+    condition = str_detect(string = string, pattern = pattern), 
+    true = replacement, 
+    false = string
+  )
+
+}
+
+```
+
+## 1. Text preprocessing
+
+First, we simplify text by converting everything to lower case, removing special characters, dropping common prepositions, and dropping "econ" and "economics". 
+
+```{r}
+highest_degree <- highest_degree %>%
+  mutate(
+    degree_clean = degree,
+    degree_clean = str_to_lower(degree_clean),
+    degree_clean = str_remove_all(degree_clean, pattern = "\\."),
+    degree_clean = str_remove_all(degree_clean, pattern = ","),
+    degree_clean = str_remove_all(degree_clean, pattern = "-"),
+    degree_clean = str_remove_all(degree_clean, pattern = "\\("),
+    degree_clean = str_remove_all(degree_clean, pattern = "\\)"),
+    degree_clean = str_remove_all(degree_clean, pattern = "\\["),
+    degree_clean = str_remove_all(degree_clean, pattern = "\\]"),
+    degree_clean = str_remove_all(degree_clean, pattern = "\\&"),
+    degree_clean = str_remove_all(degree_clean, pattern = "•"),
+    degree_clean = str_replace_all(degree_clean, pattern = " in ", replace = " "),
+    degree_clean = str_replace_all(degree_clean, pattern = " of ", replace = " "),
+    degree_clean = str_remove_all(degree_clean, pattern = "'"),
+    degree_clean = str_remove_all(degree_clean, pattern = "economics"),
+    degree_clean = str_remove_all(degree_clean, pattern = "econ"),
+    degree_clean = str_squish(degree_clean)
+  ) 
+
+```
+
+## 2. Manually clean clear cases
+
+"ph d" is a very common response after preprocessing. We clean up several cases in this vein.
+
+```{r}
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "ph d", "phd"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "d phil", "phd"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "m b a", "ma"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "m sc", "ma"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "b sc", "ba"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "m ec", "ba"))
+
+
+```
+
+## 3. Identify students without PhDs
+
+Next, we label students. This will avoid situations later where we might accidentally label "phd abd" or "phd student" as people with PhDs. We assume that anyone who is a candidate, ABD, or PhD student has an MA.
+
+```{r}
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "phd student", "ma")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "phd sought", "ma")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "phd ongoing", "ma")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "in process", "ma"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "anticipated", "ma"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "cand", "ma")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "abd", "ma")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "all but dissertation", "ma"))
+
+```
+
+## 4. Simplify degrees 
+
+The responses contain tons of extraneous information. 
+
+We work from the highest level degree (PhD or DBA) to the lowest level degree. This means if someone has a PhD and JD, their highest degree will be a PhD. If someone lists "ba and ma", their highest degree will be an ma. 
+
+```{r}
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "phd|^doctor|^dr|dphil|dba|edd|doctorate|^dpa", "phd")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "jd", "jd")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "judicial expert|juris|llb", "jd"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "postdoc|post doc|pgd", "phd")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "^master|mba|^ma|^ms|mphil|mpa|^am|^sm", "ma")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "^ba|^bs|^bm|^ab|bphil|^sb|^bba|undergraduate", "ba")) 
+
+```
+
+## 5. Clean up international degrees
+
+We clean up a few international examples. 
+
+```{r}
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "habil|hab", "phd")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "docent", "phd"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "docteur", "phd"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "univdoz", "phd"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "lhd", "phd")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "mres", "ma")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "volkswirt", "ma")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "dea", "ma")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "licen", "ma")) 
+
+# germany
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "mtech", "ma")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "diplomoekonom", "ma")) 
+
+# england
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "mlitt", "ma")) 
+
+# india
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "pgsem", "ma")) 
+
+# spain
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "laurea", "ba")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "sarjana ekonomi", "ba")) 
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "bacharel", "ba"))
+
+```
+
+Here are the results before we start working with edge cases. 
+
+```{r}
+highest_degree %>%
+  count(degree_clean, sort = TRUE, wt = n) %>%
+  print(n = Inf)
+
+```
+
+## 6. Make decisions about tough cases
+
+We assume that anyone listing professor has a PhD (i.e. "professor", "assistant professor", "prof", "associate professor"). We assume that anyone with a post graduate position has an MA. 
+
+```{r}
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "prof", "phd"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "post grad|postgrau", "ma"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "graduate ", "ma"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "frm", "ma"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "degree", "ba"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "^diploma", "ba"))
+
+```
+
+Finally, we tidy up a few more edge cases. 
+
+```{r}
+highest_degree <- highest_degree %>%
+  mutate(
+    degree_clean = case_match(
+      degree_clean,
+      "m s" ~ "ma",
+      "acs" ~ "ba",
+      "alm" ~ "ma",
+      "m pub pol mgt" ~ "ma",
+      "global studies ba" ~ "ba",
+      "mla mms med" ~ "ma",
+      .default = degree_clean
+    )
+  )
+
+
+```
+
+Here are the results before coarsening. 
+
+```{r}
+highest_degree %>%
+  count(degree_clean, sort = TRUE, wt = n) %>%
+  print(n = Inf)
+
+```
+
+## 7. Coarsen to groups of interest
+
+```{r}
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "^mph|^mfa|^mdiv|^murp|^mmh|^mls|^mbs|^llm|^me|^mpp", "ma"))
+
+highest_degree <- highest_degree %>%
+  mutate(degree_clean = simplify_response(degree_clean, "^be", "ma"))
+
+
+```
+
+# Explore Results
+
+At this point, most, if not all responses, don't answer the question about educational attainment. We will need to decide what to do about responses that don't answer the question of interest. 
+
+```{r}
+highest_degree %>%
+  count(degree_clean, sort = TRUE, wt = n) %>%
+  print(n = Inf)
+
+```
+
+```{r}
+highest_degree <- highest_degree %>%
+  mutate(
+    degree_simple = case_match(
+      degree_clean,
+      "phd" ~ "PhD or DBA",
+      c("md", "jd") ~ "JD, MD, or other terminal degree",
+      c("ma") ~ "Master’s degree",
+      c("ba") ~ "Bachelor’s degree",
+      .default = "other"
+    )
+  )
+
+```
+
+```{r}
+highest_degree %>%
+  count(degree_simple, sort = TRUE, wt = n) %>%
+  print(n = Inf)
+
+```
+
+# Save Results
+
+```{r}
+# detailed data
+highest_degree %>%
+  write_csv(here("data", "clean", "highest-degree_detailed.csv"))
+
+# summarized data
+highest_degree %>%
+  count(degree_simple, sort = TRUE) %>%
+  write_csv(here("data", "clean", "highest-degree_summarized.csv"))
+
+```
+
+# Session Info
+
+```{r}
+sessionInfo()
+
+```
