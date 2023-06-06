@@ -1,0 +1,702 @@
+degree,n,degree_clean,degree_simple
+PhD,1189,phd,PhD or DBA
+Ph.D.,787,phd,PhD or DBA
+Ph.D,132,phd,PhD or DBA
+PHD IN ECONOMICS,121,phd,PhD or DBA
+Ph.D. in Economics,91,phd,PhD or DBA
+PhD Economics,89,phd,PhD or DBA
+Ph.D. economics,67,phd,PhD or DBA
+MA,50,ma,Master’s degree
+Ph. D.,49,phd,PhD or DBA
+MBA,41,ma,Master’s degree
+"PhD, Economics",29,phd,PhD or DBA
+"Ph.D., Economics",25,phd,PhD or DBA
+M.A.,22,ma,Master’s degree
+PhD (Economics),15,phd,PhD or DBA
+Economics,14,,other
+MA Economics,14,ma,Master’s degree
+Ph.D. (Economics),14,phd,PhD or DBA
+Habilitation,13,phd,PhD or DBA
+Ph.D Economics,13,phd,PhD or DBA
+BA,12,ba,Bachelor’s degree
+Ph D,11,phd,PhD or DBA
+PhD - Economics,11,phd,PhD or DBA
+MSc,10,ma,Master’s degree
+Doctor of Philosophy,9,phd,PhD or DBA
+Doctorate,9,phd,PhD or DBA
+Master of Arts in Economics,9,ma,Master’s degree
+MS,9,ma,Master’s degree
+DPhil,8,phd,PhD or DBA
+Dr. rer. pol.,8,phd,PhD or DBA
+Master,8,ma,Master’s degree
+Ph.D in Economics,8,phd,PhD or DBA
+PhD in Finance,8,phd,PhD or DBA
+Doctor,7,phd,PhD or DBA
+M.A. Economics,7,ma,Master’s degree
+PhD.,7,phd,PhD or DBA
+Bachelor of Arts,6,ba,Bachelor’s degree
+M.S.,6,ma,Master’s degree
+MA in Economics,6,ma,Master’s degree
+"MA, Economics",6,ma,Master’s degree
+Master of Economics,6,ma,Master’s degree
+Master of Science,6,ma,Master’s degree
+MSC in Economics,6,ma,Master’s degree
+Ph. D,6,phd,PhD or DBA
+B.A. Economics,5,ba,Bachelor’s degree
+DBA,5,phd,PhD or DBA
+DOCTOR OF PHILOSOPHY IN ECONOMICS,5,phd,PhD or DBA
+"Economics, PhD",5,phd,PhD or DBA
+J.D.,5,jd,"JD, MD, or other terminal degree"
+JD,5,jd,"JD, MD, or other terminal degree"
+M.Sc. Economics,5,ma,Master’s degree
+MPA,5,ma,Master’s degree
+MSc Economics,5,ma,Master’s degree
+PhD Candidate,5,ma,Master’s degree
+PhD Econ,5,phd,PhD or DBA
+BA in Economics,4,ba,Bachelor’s degree
+Bachelor,4,ba,Bachelor’s degree
+Bachelor of science,4,ba,Bachelor’s degree
+D.Phil.,4,phd,PhD or DBA
+Doctoral,4,phd,PhD or DBA
+Dr,4,phd,PhD or DBA
+M.A. in Economics,4,ma,Master’s degree
+M.B.A.,4,ma,Master’s degree
+M.S. Economics,4,ma,Master’s degree
+Master of Arts,4,ma,Master’s degree
+Ph. D. in Economics,4,phd,PhD or DBA
+PHD (ECON),4,phd,PhD or DBA
+PHD-ECONOMICS,4,phd,PhD or DBA
+Professor,4,phd,PhD or DBA
+B.A.,3,ba,Bachelor’s degree
+B.A. in Economics,3,ba,Bachelor’s degree
+B.S. Economics,3,ba,Bachelor’s degree
+B.S. Mathematics,3,ba,Bachelor’s degree
+Bachelor's Degree,3,ba,Bachelor’s degree
+BS,3,ba,Bachelor’s degree
+certificate,3,certificate,other
+D.Phil,3,phd,PhD or DBA
+Dr.,3,phd,PhD or DBA
+Dr. h.c.,3,phd,PhD or DBA
+"M.A., Economics",3,ma,Master’s degree
+M.Phil,3,ma,Master’s degree
+M.Phil.,3,ma,Master’s degree
+Master of Public Administration,3,ma,Master’s degree
+Master of Science in Economics,3,ma,Master’s degree
+Masters,3,ma,Master’s degree
+MPhil,3,ma,Master’s degree
+MS Applied Economics,3,ma,Master’s degree
+MS Economics,3,ma,Master’s degree
+MS Finance,3,ma,Master’s degree
+"Ph. D., Economics",3,phd,PhD or DBA
+"Ph.D, Economics",3,phd,PhD or DBA
+Ph.D. - Economics,3,phd,PhD or DBA
+Ph.D. (Econ),3,phd,PhD or DBA
+Ph.D. Econ,3,phd,PhD or DBA
+PhD Agricultural and Resource Economics,3,phd,PhD or DBA
+Phd Student,3,ma,Master’s degree
+Professor of Economics,3,phd,PhD or DBA
+Public Policy,3,public policy,other
+PhD,2,phd,PhD or DBA
+A.M.,2,ma,Master’s degree
+AB,2,ba,Bachelor’s degree
+Assistant Professor,2,phd,PhD or DBA
+"B.A., Economics",2,ba,Bachelor’s degree
+BA Economics,2,ba,Bachelor’s degree
+Bachelor of Economics,2,ba,Bachelor’s degree
+D Phil,2,phd,PhD or DBA
+Diplom-Volkswirt,2,ma,Master’s degree
+Doctor of Business Administration,2,phd,PhD or DBA
+Doctor of Economic Development,2,phd,PhD or DBA
+Doctor of Economics,2,phd,PhD or DBA
+Doctorate in Economics,2,phd,PhD or DBA
+DPhil Economics,2,phd,PhD or DBA
+Dr. oec.,2,phd,PhD or DBA
+Dr. rer. oec.,2,phd,PhD or DBA
+Economics Ph.D.,2,phd,PhD or DBA
+Executive MBA,2,ma,Master’s degree
+habil.,2,phd,PhD or DBA
+M. Sc.,2,ma,Master’s degree
+M.A. - Economics,2,ma,Master’s degree
+M.A. Applied Economics,2,ma,Master’s degree
+"M.A., M.Phil.",2,ma,Master’s degree
+M.S. in Economics,2,ma,Master’s degree
+MA (Econ),2,ma,Master’s degree
+MA Applied Economics,2,ma,Master’s degree
+MA Econ,2,ma,Master’s degree
+Master in Business administration,2,ma,Master’s degree
+Master in Economics,2,ma,Master’s degree
+Master in Public Policy,2,ma,Master’s degree
+Master of Arts in Applied Economics,2,ma,Master’s degree
+Master of Science in Applied Economics,2,ma,Master’s degree
+Masters of Business Administration,2,ma,Master’s degree
+Masters of Economics,2,ma,Master’s degree
+MBA Finance,2,ma,Master’s degree
+"MS, Economics",2,ma,Master’s degree
+Ph.D. Candidate in Public Policy,2,ma,Master’s degree
+Ph.D. Finance,2,phd,PhD or DBA
+Ph.D. of Economics,2,phd,PhD or DBA
+PhD Applied Economics,2,phd,PhD or DBA
+PhD in Agricultural and Resource Economics,2,phd,PhD or DBA
+PhD in Public Policy,2,phd,PhD or DBA
+"PhD, Agricultural & Applied Economics",2,phd,PhD or DBA
+"PhD, Agricultural and Resource Economics",2,phd,PhD or DBA
+"PhD, Applied Economics",2,phd,PhD or DBA
+"PhD, MA",2,phd,PhD or DBA
+Prof.,2,phd,PhD or DBA
+"MA, Economics",1,ma,Master’s degree
+(ABD),1,ma,Master’s degree
+"• Bachelor of Business Administration (Business Economics) (Special) University of Sri Jayewardenepura, Sri Lanka - First class",1,ba,Bachelor’s degree
+A.B.,1,ba,Bachelor’s degree
+"A.M., J.D.",1,jd,"JD, MD, or other terminal degree"
+ABD,1,ma,Master’s degree
+ABD Ph.D.,1,ma,Master’s degree
+ACS,1,ba,Bachelor’s degree
+Administração de Empresa Bacharel,1,ba,Bachelor’s degree
+Agrégation,1,agrégation,other
+Agrégation des Universités,1,agrégation des universités,other
+All but dissertation,1,ma,Master’s degree
+ALM Finance,1,alm finance,other
+AM,1,ma,Master’s degree
+"AM, PhD in Economics",1,phd,PhD or DBA
+Applied Econometrics,1,applied ometrics,other
+Applied Economics (ND),1,applied nd,other
+Applied Economics Ph.D.,1,phd,PhD or DBA
+AS Business Administration & Management,1,as business administration management,other
+Assistant Research Fellow,1,assistant research fellow,other
+Associate Professor,1,phd,PhD or DBA
+B Economics,1,b,other
+B. Litt. Candidate in Economics,1,ma,Master’s degree
+B. Sc. Economics,1,ba,Bachelor’s degree
+B.A. Sociology,1,ba,Bachelor’s degree
+"B.A. with Honors, Economics",1,ba,Bachelor’s degree
+"B.A., M.A. - Economics",1,ba,Bachelor’s degree
+B.B.A.  Actuarial Science,1,ba,Bachelor’s degree
+B.phil,1,ba,Bachelor’s degree
+B.S.,1,ba,Bachelor’s degree
+B.S. Mathematics and Economics,1,ba,Bachelor’s degree
+BA (Hons.) Modern History and Economics,1,ba,Bachelor’s degree
+BA Foreign Language and Literature (German),1,ba,Bachelor’s degree
+BA German,1,ba,Bachelor’s degree
+BA Hons,1,ba,Bachelor’s degree
+BA in Economics and Geography + GIS,1,ba,Bachelor’s degree
+BA in Political Science and Economics,1,ba,Bachelor’s degree
+"BA, BS, Masters, Certificates",1,ba,Bachelor’s degree
+"BA, Econ.& Bus. Adm.",1,ba,Bachelor’s degree
+"BA, MA - Economics",1,ba,Bachelor’s degree
+BA=MA (Oxon),1,ba,Bachelor’s degree
+Bachelor Economics & Mathematics,1,ba,Bachelor’s degree
+BACHELOR IN CONOMICS,1,ba,Bachelor’s degree
+Bachelor of Arts - Economics,1,ba,Bachelor’s degree
+Bachelor of Economics (Honours) (Econometrics),1,ba,Bachelor’s degree
+Bachelor of Economics and Finance,1,ba,Bachelor’s degree
+Bachelor of Finance,1,ba,Bachelor’s degree
+"Bachelor of Science, Economics",1,ba,Bachelor’s degree
+Bachelor's,1,ba,Bachelor’s degree
+Bachelor's Degree in Finance,1,ba,Bachelor’s degree
+Bachelor's in Economics,1,ba,Bachelor’s degree
+Bachelor’s Degree  in Public Administration,1,ba,Bachelor’s degree
+Bachelors in Economics and Statistics,1,ba,Bachelor’s degree
+Bachelors of Arts,1,ba,Bachelor’s degree
+Bachelors Science International Economics,1,ba,Bachelor’s degree
+BBA,1,ba,Bachelor’s degree
+BE,1,ma,Master’s degree
+BM in music,1,ba,Bachelor’s degree
+BS Accounting & Finance,1,ba,Bachelor’s degree
+BS Computer Science,1,ba,Bachelor’s degree
+BS Economics,1,ba,Bachelor’s degree
+BS Finance,1,ba,Bachelor’s degree
+BS Management,1,ba,Bachelor’s degree
+BS Urban and Regional Planning,1,ba,Bachelor’s degree
+BSc Business,1,ba,Bachelor’s degree
+BSc Economics,1,ba,Bachelor’s degree
+BSc Quantitative Economics,1,ba,Bachelor’s degree
+Bsc. Applied Economics,1,ba,Bachelor’s degree
+BSc. Applied Mathematics,1,ba,Bachelor’s degree
+Business Economics & Finance,1,business finance,other
+Business Management,1,business management,other
+"Candidate, Ph.D. Economics",1,ma,Master’s degree
+Candidate: PhD Public Policy,1,ma,Master’s degree
+Cert. Art. Intelligence Business Applications,1,cert art intelligence business applications,other
+Certificate - Board Leadership,1,certificate board leadership,other
+Certified Business Economist,1,certified business omist,other
+CFA,1,cfa,other
+CFA Charterholder,1,cfa charterholder,other
+Computer Science,1,computer science,other
+Continued Education Course,1,continued education course,other
+D. Phil,1,phd,PhD or DBA
+D.B.A. - Finance,1,phd,PhD or DBA
+D.Phil. (Economics),1,phd,PhD or DBA
+D.Phil. in Economics,1,phd,PhD or DBA
+DEA in Math-Stat,1,ma,Master’s degree
+Degree in Economics,1,ba,Bachelor’s degree
+DIMPLOMA IN HOTEL AND TOURISM MANAGEMENT,1,dimploma hotel and tourism management,other
+Dipl.-Volkswirt,1,ma,Master’s degree
+Diplom Volkswirt / Msc in Ecoomics,1,ma,Master’s degree
+Diploma,1,ba,Bachelor’s degree
+Diploma in Economics,1,ba,Bachelor’s degree
+Diploma postgrau en Economia i GestiÃ³ de la Hisenda AutonÃ²mica i Local,1,ma,Master’s degree
+Diplomoekonom,1,ma,Master’s degree
+Docent,1,phd,PhD or DBA
+Docteur,1,phd,PhD or DBA
+Doctor (Economics ),1,phd,PhD or DBA
+Doctor (Science),1,phd,PhD or DBA
+Doctor Degree Majored in Econometrics,1,phd,PhD or DBA
+Doctor en Ciencias EconÃ³micas,1,phd,PhD or DBA
+Doctor in Economics,1,phd,PhD or DBA
+Doctor of Business Administration - Technology and Operation Management (Innovation),1,phd,PhD or DBA
+Doctor of Energy Science,1,phd,PhD or DBA
+Doctor of Laws honorary,1,phd,PhD or DBA
+Doctor of Philosophy (Economics and Political Science) International Trade & Development and Public Policy,1,phd,PhD or DBA
+Doctor of Philosophy (Management),1,phd,PhD or DBA
+Doctor of Philosophy (Ph.D),1,phd,PhD or DBA
+"Doctor of Philosophy, Economics",1,phd,PhD or DBA
+"Doctor of Philosphy, Economics",1,phd,PhD or DBA
+Doctor of Science in Information Systems,1,phd,PhD or DBA
+Doctor Political Science,1,phd,PhD or DBA
+Doctor Public Administration,1,phd,PhD or DBA
+Doctoral Program,1,phd,PhD or DBA
+Doctoral Student in Finance,1,phd,PhD or DBA
+Doctoral Studies; Economic Sciences,1,phd,PhD or DBA
+Doctorandus,1,phd,PhD or DBA
+Doctorat d'Etat,1,phd,PhD or DBA
+Doctorate in Business Administration and PhD in economics,1,phd,PhD or DBA
+Doctorate in Law,1,phd,PhD or DBA
+Doctorate in Political Economy,1,phd,PhD or DBA
+Doctorate of Business Administration,1,phd,PhD or DBA
+"Doctorate, Economics",1,phd,PhD or DBA
+Dozent (Habilitation),1,phd,PhD or DBA
+DPA,1,phd,PhD or DBA
+DPhil (econ),1,phd,PhD or DBA
+DPhil (Economics),1,phd,PhD or DBA
+DPhil (PhD) Economics,1,phd,PhD or DBA
+Dr. (Phd),1,phd,PhD or DBA
+Dr. Economics,1,phd,PhD or DBA
+Dr. es sciences politiques,1,phd,PhD or DBA
+dr. habil,1,phd,PhD or DBA
+Dr. habil.,1,phd,PhD or DBA
+Dr. in Economics,1,phd,PhD or DBA
+Dr. oec. publ.,1,phd,PhD or DBA
+Dr. Polit,1,phd,PhD or DBA
+Dr. rer. pol. (equiv. PhD in economics),1,phd,PhD or DBA
+Dr. rer. pol. habil.,1,phd,PhD or DBA
+Dr. rer.pol,1,phd,PhD or DBA
+Dr. rer.pol.,1,phd,PhD or DBA
+Dr. sc. pol.,1,phd,PhD or DBA
+Dr.habil.,1,phd,PhD or DBA
+Dr.IN ECONOMICS,1,phd,PhD or DBA
+Dr.rer.pol. (Economics),1,phd,PhD or DBA
+Dr.rer.pol.habil.,1,phd,PhD or DBA
+Dual PhD in Economics and Historical Studies,1,phd,PhD or DBA
+Economic Aanalysis Specialist,1,omic aanalysis specialist,other
+Economic Sciences,1,omic sciences,other
+Economics (Ph.D),1,phd,PhD or DBA
+"Economics & Global Studies, BA",1,ba,Bachelor’s degree
+Economics and Finance,1,and finance,other
+Economics and Finance of Aging,1,and finance aging,other
+Economics and Japanese Language & Literature,1,and japanese language literature,other
+Economics B.S.,1,ba,Bachelor’s degree
+Economics Ph.D,1,phd,PhD or DBA
+Economics PhD,1,phd,PhD or DBA
+"Economics, B.A.",1,ba,Bachelor’s degree
+EdD,1,phd,PhD or DBA
+Education Specialist (Special Educ.) Credential (Ed.S.),1,education specialist special educ credential eds,other
+Educator Certificate - School Guidance,1,educator certificate school guidance,other
+EMBA,1,ma,Master’s degree
+Environmental Economics and Policy,1,environmental and policy,other
+"Executive Education, Evidence in Policy Design",1,executive education evidence policy design,other
+Fellowship in Economics,1,fellowship,other
+Finance,1,finance,other
+Financial Economics,1,financial,other
+"FISCAL CRIMES EXPERT, COMMERCIAL. MONEY LAUNDERING AND TERRORISM FINANCING",1,fiscal crimes expert commercial money laundering and terrorism financing,other
+Foreign Affairs,1,foreign affairs,other
+FRM,1,ma,Master’s degree
+Fulbright Post-Doctorate,1,phd,PhD or DBA
+Full Professor scientific title,1,phd,PhD or DBA
+Government and Politics,1,government and politics,other
+Graduate Certificate in Intermediate Survey Methodology,1,ma,Master’s degree
+Graduate Certificate in IP Law,1,ma,Master’s degree
+Graduate Certificate in Public Health,1,ma,Master’s degree
+"Graduate Degree, Economics and Statistics",1,ma,Master’s degree
+Graduate Diploma in Finance,1,ma,Master’s degree
+Graduate Statistician (Gstat),1,ma,Master’s degree
+graduated,1,graduated,other
+Habilitation Ã  diriger les recherches,1,phd,PhD or DBA
+Habilitation Economics,1,phd,PhD or DBA
+Habilitation in Economic Development,1,phd,PhD or DBA
+HDR (habilitation to direct research) in sociology,1,phd,PhD or DBA
+Honoured Professor,1,phd,PhD or DBA
+International Applied Economics Specialist,1,international applied specialist,other
+International Economics and Finance,1,international and finance,other
+Italian Doctorate,1,phd,PhD or DBA
+JUDICIAL EXPERT,1,jd,"JD, MD, or other terminal degree"
+Juris Doctor,1,jd,"JD, MD, or other terminal degree"
+JurisDoctor,1,jd,"JD, MD, or other terminal degree"
+Laurea in Economia Politica,1,ba,Bachelor’s degree
+Laurea in Economics and Business,1,ba,Bachelor’s degree
+LHD,1,phd,PhD or DBA
+Licenciado en Economia,1,ma,Master’s degree
+Licenciate in Economics,1,ma,Master’s degree
+Licentiate in Economics,1,ma,Master’s degree
+LL.M,1,ma,Master’s degree
+M Ec,1,ba,Bachelor’s degree
+M Sc in Financial Mathematics,1,ma,Master’s degree
+M. B. A.,1,ma,Master’s degree
+M. Pub. Pol. Mgt.,1,ma,Master’s degree
+M. S.,1,ma,Master’s degree
+M. Sc. in Economics,1,ma,Master’s degree
+M.A Economics,1,ma,Master’s degree
+M.A in Economics,1,ma,Master’s degree
+M.A. (economics),1,ma,Master’s degree
+M.A. Econ,1,ma,Master’s degree
+M.A. Financial Economics,1,ma,Master’s degree
+M.A. Interdisciplinary,1,ma,Master’s degree
+"M.A. Politics, Economics, & Business",1,ma,Master’s degree
+"M.A., Applied Economics",1,ma,Master’s degree
+M.D.,1,md,"JD, MD, or other terminal degree"
+M.Div.,1,ma,Master’s degree
+"M.Ed Educational Leadership, Policy and Human Development",1,ma,Master’s degree
+M.L.S.,1,ma,Master’s degree
+M.Litt.,1,ma,Master’s degree
+M.P.P.,1,ma,Master’s degree
+M.Res. Economics,1,ma,Master’s degree
+M.S. Computational Sciences and Informatics,1,ma,Master’s degree
+M.S. Engineering and Technology Management (ETM),1,ma,Master’s degree
+"M.S. in Agricultural, Food, and Resource Economics",1,ma,Master’s degree
+M.S. in Applied Economics,1,ma,Master’s degree
+M.S. in Applied Financial Economics,1,ma,Master’s degree
+M.S. in Economics and Finaance,1,ma,Master’s degree
+M.S. International Economics and Economic Policy,1,ma,Master’s degree
+M.S. Mathematics,1,ma,Master’s degree
+M.S. Quantitative Economics,1,ma,Master’s degree
+M.S.. Economics,1,ma,Master’s degree
+M.Sc. in International Accounting and Finance,1,ma,Master’s degree
+M.Sc. in Resource Economics,1,ma,Master’s degree
+M.Sc. in Social Anthropology,1,ma,Master’s degree
+M.Sci.,1,ma,Master’s degree
+M.Tech,1,ma,Master’s degree
+MA - Economics,1,ma,Master’s degree
+MA - International Business and Policy,1,ma,Master’s degree
+MA -- Economics,1,ma,Master’s degree
+MA (Statistics),1,ma,Master’s degree
+MA [ABD],1,ma,Master’s degree
+MA Accountancy,1,ma,Master’s degree
+MA Econometrics,1,ma,Master’s degree
+MA Financial Economics,1,ma,Master’s degree
+MA in Applied Economics,1,ma,Master’s degree
+MA in International Trade and Investment Policy,1,ma,Master’s degree
+MA in Social Psychology; MS in Statistics,1,ma,Master’s degree
+MA International Economic and Finance,1,ma,Master’s degree
+MA Urban Studies,1,ma,Master’s degree
+"MA, Economics (Applied Economics)",1,ma,Master’s degree
+"MA, Ph.D.",1,phd,PhD or DBA
+MA. International and Development Economics,1,ma,Master’s degree
+MA(Economics),1,ma,Master’s degree
+MaCC,1,ma,Master’s degree
+MAEEE - Masters of Economics and Entrepreneurship,1,ma,Master’s degree
+MAESTRIA EN PSICOLOGÍA ORGANIZACIONAL,1,ma,Master’s degree
+Mag.,1,ma,Master’s degree
+Mag. rer. soc. oec.,1,ma,Master’s degree
+MAGISTER IN ECONOMIC SCIENCES,1,ma,Master’s degree
+Management Program in Public Policy,1,ma,Master’s degree
+Manager Training Programme,1,ma,Master’s degree
+"MAS, Applied Econ",1,ma,Master’s degree
+Master  of Science,1,ma,Master’s degree
+Master business administration,1,ma,Master’s degree
+Master Ciencias Economicas,1,ma,Master’s degree
+Master Degree in Development Management,1,ma,Master’s degree
+Master Finance,1,ma,Master’s degree
+Master in Economics and Business,1,ma,Master’s degree
+Master in Economics and Finance,1,ma,Master’s degree
+Master in Financial Markets and Stock Exchange,1,ma,Master’s degree
+Master in International Business,1,ma,Master’s degree
+Master in Library and Information Science,1,ma,Master’s degree
+Master in Marketing,1,ma,Master’s degree
+Master in Public Administration,1,ma,Master’s degree
+Master International Taxation,1,ma,Master’s degree
+Master of Advanced Economics,1,ma,Master’s degree
+Master of Applied Economics,1,ma,Master’s degree
+Master of Arts - Economics,1,ma,Master’s degree
+Master of Arts (Economics),1,ma,Master’s degree
+Master of Arts Economics,1,ma,Master’s degree
+Master of Arts in Economics and Management,1,ma,Master’s degree
+Master of Arts in International Economics and Finance,1,ma,Master’s degree
+Master of Arts in Organizational Leadership ,1,ma,Master’s degree
+Master of Business Administration (MBA),1,ma,Master’s degree
+Master of Commercial Law,1,ma,Master’s degree
+MASTER OF ENVIRONMENTAL AND RESOURCE ECONOMICS,1,ma,Master’s degree
+Master of International Affairs,1,ma,Master’s degree
+Master of Legal Tax Practice,1,ma,Master’s degree
+Master of Liberal Arts,1,ma,Master’s degree
+Master of Philosophy,1,ma,Master’s degree
+Master of Philosophy in Economics,1,ma,Master’s degree
+Master of Public Affairs,1,ma,Master’s degree
+Master of Science - Economics,1,ma,Master’s degree
+Master of Science - Management Science,1,ma,Master’s degree
+Master of Science (Economics),1,ma,Master’s degree
+Master of Science (Economics)),1,ma,Master’s degree
+MASTER OF SCIENCE IN AGRICULTURAL AND NATURAL RESOURCES ECONOMICS,1,ma,Master’s degree
+Master of Science in Finance,1,ma,Master’s degree
+Master of Science in Mathematical Science,1,ma,Master’s degree
+Master of Science in Quantitative Finance (major in Economics and Econometrics),1,ma,Master’s degree
+"Master of Science, Economics and Policy Analysis",1,ma,Master’s degree
+Master of Sciences (Public Health),1,ma,Master’s degree
+Master of Social Science in Economics,1,ma,Master’s degree
+Master Universitario en Derechos Fundamentales,1,ma,Master’s degree
+Master's Degree,1,ma,Master’s degree
+"Master's Degree, Legal Studies - Criminal Law",1,ma,Master’s degree
+Master's in Public Administration in International Development (MPA/ID),1,ma,Master’s degree
+Masters Degree,1,ma,Master’s degree
+"Masters Degree, Economics",1,ma,Master’s degree
+Masters Economics,1,ma,Master’s degree
+Masters in Accountancy,1,ma,Master’s degree
+Masters in Agricultural Economics,1,ma,Master’s degree
+Masters in Economics,1,ma,Master’s degree
+Masters in Economics and Education,1,ma,Master’s degree
+Masters of Applied Economics,1,ma,Master’s degree
+MASTERS OF ARTS,1,ma,Master’s degree
+Masters of Arts--Economics,1,ma,Master’s degree
+Masters of Science Agriculture and Resource Economics,1,ma,Master’s degree
+Masters of Science in Finance and Economics,1,ma,Master’s degree
+"Masters of Science, Agricultural & Resource Economics",1,ma,Master’s degree
+MAT in Secondary Education,1,ma,Master’s degree
+Math & Stat,1,ma,Master’s degree
+"mathematical statistics, PhD",1,phd,PhD or DBA
+MBA -- Finance,1,ma,Master’s degree
+MBA Accounting/Finance,1,ma,Master’s degree
+MBA in Financial Management,1,ma,Master’s degree
+MBA-Economics,1,ma,Master’s degree
+"MBA, International Business",1,ma,Master’s degree
+MBS,1,ma,Master’s degree
+MD in Economics,1,md,"JD, MD, or other terminal degree"
+ME,1,ma,Master’s degree
+Methodology in Complex Sales,1,ma,Master’s degree
+MFA,1,ma,Master’s degree
+mla  mms med,1,ma,Master’s degree
+MMH,1,ma,Master’s degree
+MoM Logistics and Supply Chain,1,mom logistics and supply chain,other
+"MPA, concentration in public finance & city management",1,ma,Master’s degree
+MPH,1,ma,Master’s degree
+MPhil Finance,1,ma,Master’s degree
+MPP,1,ma,Master’s degree
+MRes,1,ma,Master’s degree
+MRES Econ,1,ma,Master’s degree
+MS - Applied Economics,1,ma,Master’s degree
+MS - Economics,1,ma,Master’s degree
+MS Computer Science,1,ma,Master’s degree
+MS Ed Higher Education,1,ma,Master’s degree
+MS Financial Economics,1,ma,Master’s degree
+MS For Eng,1,ma,Master’s degree
+MS in Business Analytics,1,ma,Master’s degree
+MS in Economics,1,ma,Master’s degree
+MS Industrial Engineering,1,ma,Master’s degree
+MS Narrative Medicine,1,ma,Master’s degree
+MS Resource and Applied Economics,1,ma,Master’s degree
+MS Urban and Regional Planning,1,ma,Master’s degree
+"MS, Engineering Sciences and Applied Mathematics",1,ma,Master’s degree
+MS; Agricultural and Applied Economics,1,ma,Master’s degree
+MS. Applied Economics- ENR,1,ma,Master’s degree
+MS.Econ,1,ma,Master’s degree
+MS/Ph.D.,1,phd,PhD or DBA
+MSc (Econ),1,ma,Master’s degree
+MSc Agricultural Economics,1,ma,Master’s degree
+MSc Applied Economics,1,ma,Master’s degree
+MSc Econ,1,ma,Master’s degree
+MsC Economic History,1,ma,Master’s degree
+MSc Economist,1,ma,Master’s degree
+MSc Energy and Resources,1,ma,Master’s degree
+MSc Finance,1,ma,Master’s degree
+MSC Financial Economics,1,ma,Master’s degree
+MSc in Management,1,ma,Master’s degree
+MSc in Quantitative Finance,1,ma,Master’s degree
+Msc International Economics,1,ma,Master’s degree
+"MSc, Specialised Economic Analysis",1,ma,Master’s degree
+MSc.,1,ma,Master’s degree
+MSc. in Environmental Policy,1,ma,Master’s degree
+MSc(Econ),1,ma,Master’s degree
+MSPPM,1,ma,Master’s degree
+MURP Economic Development,1,ma,Master’s degree
+Northwestern University,1,northwestern university,other
+Organizational Communication,1,organizational communication,other
+P,1,p,other
+P.hD. (Economics),1,phd,PhD or DBA
+PGD Global Business,1,phd,PhD or DBA
+PGSEM,1,ma,Master’s degree
+Ph. D. Economics,1,phd,PhD or DBA
+Ph.D  Economics,1,phd,PhD or DBA
+Ph.D - Economics,1,phd,PhD or DBA
+Ph.D (candidate) in Economics,1,ma,Master’s degree
+Ph.D (Econ),1,phd,PhD or DBA
+Ph.D (Economics),1,phd,PhD or DBA
+Ph.D (International Public Policy),1,phd,PhD or DBA
+Ph.D (ongoing),1,ma,Master’s degree
+Ph.d Applied Economics,1,phd,PhD or DBA
+Ph.D Business Economics,1,phd,PhD or DBA
+Ph.D candidate,1,ma,Master’s degree
+Ph.D in Management Sciences (Energy Efficiency Research),1,phd,PhD or DBA
+Ph.D in Monetary Economics,1,phd,PhD or DBA
+"Ph.D, Agricultural and Resource Economics",1,phd,PhD or DBA
+Ph.D.   Economics,1,phd,PhD or DBA
+Ph.D.  Economics,1,phd,PhD or DBA
+Ph.D. (Business Administration),1,phd,PhD or DBA
+Ph.D. (Dr. oec. publ.),1,phd,PhD or DBA
+Ph.D. (econ.),1,phd,PhD or DBA
+Ph.D. (expected),1,phd,PhD or DBA
+Ph.D. (Finance),1,phd,PhD or DBA
+"Ph.D. (International Trade, Finance and Business)",1,phd,PhD or DBA
+Ph.D. â€” Economics,1,phd,PhD or DBA
+Ph.D. AED Economics,1,phd,PhD or DBA
+Ph.D. Agricultural & Resource Economics,1,phd,PhD or DBA
+Ph.D. Applied Economics,1,phd,PhD or DBA
+Ph.D. Behavioural Sciences,1,phd,PhD or DBA
+Ph.D. Business Admn.,1,phd,PhD or DBA
+Ph.D. candidate,1,ma,Master’s degree
+Ph.D. Computational Sciences and Informatics: Economic Systems,1,phd,PhD or DBA
+Ph.D. Demography/Biostatistics,1,phd,PhD or DBA
+Ph.D. Economics (Specialized in Corporate Finance),1,phd,PhD or DBA
+Ph.D. Economics and Management,1,phd,PhD or DBA
+"Ph.D. Economics,",1,phd,PhD or DBA
+Ph.D. Economics/Statistics,1,phd,PhD or DBA
+Ph.D. Environmental Science and Management,1,phd,PhD or DBA
+Ph.D. hab. in economics and finance,1,phd,PhD or DBA
+Ph.D. Human Development,1,phd,PhD or DBA
+Ph.D. in Ag. & Applied Economics,1,phd,PhD or DBA
+Ph.D. in Agricultural and Applied Economics,1,phd,PhD or DBA
+Ph.D. in Agricultural and Resource Economics,1,phd,PhD or DBA
+Ph.D. in Agricultural Economics,1,phd,PhD or DBA
+Ph.D. in Applied Economics,1,phd,PhD or DBA
+Ph.D. in Consumer Economics,1,phd,PhD or DBA
+Ph.D. in Economics and Education,1,phd,PhD or DBA
+Ph.D. in Energy Economics and Climate Policy,1,phd,PhD or DBA
+Ph.D. in Finance,1,phd,PhD or DBA
+Ph.D. in Industrial and Systems Engineering,1,phd,PhD or DBA
+Ph.D. in Information,1,phd,PhD or DBA
+Ph.D. in Quantitative Economics and Finance,1,phd,PhD or DBA
+Ph.D. in Sustainable Development,1,phd,PhD or DBA
+Ph.D. International Development Planning,1,phd,PhD or DBA
+Ph.D. of Ecoomics,1,phd,PhD or DBA
+Ph.D. Political Economy,1,phd,PhD or DBA
+Ph.D. Public Policy and Management,1,phd,PhD or DBA
+Ph.D. Spatial Economics,1,phd,PhD or DBA
+Ph.D. student,1,ma,Master’s degree
+Ph.D.--Economics,1,phd,PhD or DBA
+Ph.D.-economics,1,phd,PhD or DBA
+"Ph.D.,",1,phd,PhD or DBA
+"Ph.D., AED Economics",1,phd,PhD or DBA
+"PH.D., BUSINESS ECONOMICS",1,phd,PhD or DBA
+"Ph.D., Economics (In progress)",1,phd,PhD or DBA
+"Ph.D., Finance",1,phd,PhD or DBA
+"Ph.D., Forest Economics",1,phd,PhD or DBA
+"Ph.D., International Econ",1,phd,PhD or DBA
+"Ph.D., Public Policy and Management",1,phd,PhD or DBA
+Ph.D.Economics,1,phd,PhD or DBA
+Ph.D.in Economics,1,phd,PhD or DBA
+PhD  in Economics,1,phd,PhD or DBA
+PhD - Agricultural and Resource Economics,1,phd,PhD or DBA
+PhD - Economics/Political Economy,1,phd,PhD or DBA
+PhD - International Finance,1,phd,PhD or DBA
+PhD ( Honoris Causa ),1,phd,PhD or DBA
+PhD (ABD),1,ma,Master’s degree
+PhD (Anticipated Graduation),1,ma,Master’s degree
+PhD (Economics) PhD minor (Engineering Economic Systems),1,phd,PhD or DBA
+Phd (Expected),1,phd,PhD or DBA
+PhD (Financial Economics),1,phd,PhD or DBA
+PhD (International Economics),1,phd,PhD or DBA
+PhD (licentiat),1,phd,PhD or DBA
+PhD (Mathematics),1,phd,PhD or DBA
+PhD (policy Studies),1,phd,PhD or DBA
+PhD (Public Policy & American Politics),1,phd,PhD or DBA
+PhD (Regional Economic Development),1,phd,PhD or DBA
+PhD Agric & Applied Economics,1,phd,PhD or DBA
+PhD Behavioral Decision Research,1,phd,PhD or DBA
+PhD Business Administration (Accounting),1,phd,PhD or DBA
+PhD Business Economics,1,phd,PhD or DBA
+PhD by thesis/in process,1,ma,Master’s degree
+PHD Cand.,1,ma,Master’s degree
+PhD Candidate in Economics,1,ma,Master’s degree
+PhD Consumer Economics,1,phd,PhD or DBA
+PhD Econometrics and Quantitative Economics,1,phd,PhD or DBA
+PhD Economic Sciences,1,phd,PhD or DBA
+PhD Economics (expected May 2023),1,phd,PhD or DBA
+PhD Economics (sought),1,ma,Master’s degree
+PhD Economics and Politics,1,phd,PhD or DBA
+PhD Economics candidate,1,ma,Master’s degree
+PhD Financial Economics,1,phd,PhD or DBA
+PhD Financial Planning,1,phd,PhD or DBA
+PhD Humanities (hc),1,phd,PhD or DBA
+PhD in Agricultural and Applied Economics,1,phd,PhD or DBA
+PhD in Applied Economics (ABD),1,ma,Master’s degree
+PhD in Behavioural Economics,1,phd,PhD or DBA
+PhD in Business Administration,1,phd,PhD or DBA
+PhD in Development,1,phd,PhD or DBA
+PhD in Development Economics,1,phd,PhD or DBA
+PhD in Economic Education,1,phd,PhD or DBA
+"PhD in Economic, Business and Legal Science",1,phd,PhD or DBA
+PhD in Economics and Finance,1,phd,PhD or DBA
+PhD in Economics and Policy Analysis,1,phd,PhD or DBA
+PHD in economics: Economic Policy and Development: A Keynesian Critique of Structuralism and Neoliberalism,1,phd,PhD or DBA
+PhD in Economis,1,phd,PhD or DBA
+PhD in Environmental Economics and Policy,1,phd,PhD or DBA
+PhD in Financial Economics,1,phd,PhD or DBA
+PhD in HRIR,1,phd,PhD or DBA
+PhD in Information,1,phd,PhD or DBA
+PhD in Labor Economics,1,phd,PhD or DBA
+PhD in Macroeconomics and Economic Modeling,1,phd,PhD or DBA
+PhD in Management,1,phd,PhD or DBA
+PhD in Management Science and Engineering,1,phd,PhD or DBA
+PhD in Managerial Economics and Strategy,1,phd,PhD or DBA
+PhD in Migration Studies,1,phd,PhD or DBA
+PhD in Mineral and Energy Economcis,1,phd,PhD or DBA
+PhD in progress,1,phd,PhD or DBA
+PhD in Public Finance (Economics),1,phd,PhD or DBA
+PhD in Public Policy (Attending),1,phd,PhD or DBA
+PhD in Public Policy (Labor Econ),1,phd,PhD or DBA
+PhD in Social Science,1,phd,PhD or DBA
+PhD International Business Economics,1,phd,PhD or DBA
+PhD International Economics,1,phd,PhD or DBA
+PhD International Economics and Finance,1,phd,PhD or DBA
+PhD of Economics,1,phd,PhD or DBA
+PhD Political Science,1,phd,PhD or DBA
+PhD Public and Urban Policy,1,phd,PhD or DBA
+PhD scholar,1,phd,PhD or DBA
+PhD Social Policy and Evaluation,1,phd,PhD or DBA
+PhD Student in Economics,1,ma,Master’s degree
+PhD Urban Land Economics and Risk Management,1,phd,PhD or DBA
+PhD-Applied Economics,1,phd,PhD or DBA
+"PhD, Administrative Science",1,phd,PhD or DBA
+"PhD, Business & Management",1,phd,PhD or DBA
+"PhD, Business Economics",1,phd,PhD or DBA
+"PhD, Ecology and Environmental Sciences: Evolutionary & Behavioral Economics",1,phd,PhD or DBA
+"PhD, ECON",1,phd,PhD or DBA
+"PhD, Economics, Environmental, Energy Economics",1,phd,PhD or DBA
+"PhD, MA, BA in economics",1,phd,PhD or DBA
+"PhD, Policy Analysis",1,phd,PhD or DBA
+"PhD, Public Policy",1,phd,PhD or DBA
+PHd. Econ.,1,phd,PhD or DBA
+PhD. Economics,1,phd,PhD or DBA
+PhD. in Economics,1,phd,PhD or DBA
+POST DOCTORATE,1,phd,PhD or DBA
+Post Graduate - Advertising and Public Relations,1,ma,Master’s degree
+Post Graduate Degree in Economics,1,ma,Master’s degree
+Post Graduate Diploma in Rural Management,1,ma,Master’s degree
+Post-Doc AACSB Academic Qualification in Finance,1,phd,PhD or DBA
+POST-DOC RESEARCHER,1,phd,PhD or DBA
+Post-Doctoral Fellow,1,phd,PhD or DBA
+Postdoc,1,phd,PhD or DBA
+Postdoctoral Fellow,1,phd,PhD or DBA
+Private Docent,1,phd,PhD or DBA
+"Prof., DDr.",1,phd,PhD or DBA
+Professional Certificate in Editing,1,phd,PhD or DBA
+Professor (Chair),1,phd,PhD or DBA
+Public Policy (MPA),1,ma,Master’s degree
+Quantitative Economics,1,quantitative,other
+Research Doctorate in Agricultural Economics and Policy,1,phd,PhD or DBA
+Sarjana Ekonomi,1,ba,Bachelor’s degree
+SB,1,ba,Bachelor’s degree
+Sc. D. Hab.,1,phd,PhD or DBA
+"SM, Economics and Finance",1,ma,Master’s degree
+Social Science,1,social science,other
+Swiss Certified Tax Expert,1,swiss certified tax expert,other
+Undergraduate,1,ba,Bachelor’s degree
+Univ.-Doz.,1,phd,PhD or DBA
+University of Saskatchewan,1,university saskatchewan,other
+Valuation,1,valuation,other
