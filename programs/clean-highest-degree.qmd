@@ -3,6 +3,7 @@ title: "Clean Highest Degree"
 author: "Aaron R. Williams -- Urban Institute"
 date: today
 format: 
+  pdf: default
   html:
     toc: true
     embed-resources: true
