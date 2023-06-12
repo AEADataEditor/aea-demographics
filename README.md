@@ -1,6 +1,6 @@
 # Demographics of AEA membership
 
-Data were extracted from internal systems in Q1 2023. Members complete the “Directory of Members” form in order to be included in the directory, which used to be like a telephone book in the old days. They can choose to receive surveys sent out by the AEA.
+Data were extracted from internal systems on 2023-05-11. Members complete the “Directory of Members” form in order to be included in the directory, which used to be like a telephone book in the old days. They can choose to receive surveys sent out by the AEA.
 
 ## Universe
 
