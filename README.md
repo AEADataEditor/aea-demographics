@@ -1,21 +1,41 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 All versions: [doi.org/10.3886/E192144](https://doi.org/10.3886/E192144)
 
-# Demographics of AEA membership
+# Summary
+
+This repository contains data from the AEA about members.
+
+# memberData_directory-only.xlsx
+
+### Description
 
 Data were extracted from internal systems on 2023-05-11. Members complete the “Directory of Members” form in order to be included in the directory, which used to be like a telephone book in the old days. They can choose to receive surveys sent out by the AEA.
 
-## Universe
+### Universe
 
 Non-expired paying members, who opted into both the Directory of Members and receiving surveys sent by the association.
 
+# memberData_all.xlsx
 
-## Notes
+### Description
+
+Data were extracted from internal systems on 2023-06-12. They can choose to receive surveys sent out by the AEA.
+
+### Universe
+
+Non-expired paying members who opted into receiving surveys sent by the association.
+
+# Notes
 
 - “Student”: The information is not a status in the directory, and was only recently reintroduced it as a payment tier. Likely to be all missing (may be inferred from "Highest Degree completed")
 
 - “Highest Degree Completed”:  reflects degree most recently completed as recorded in the directory, which should almost always yield the highest, but in (rare or maybe non-existing) cases where someone switches fields of study, is not guaranteed.  The “degree” field is free text and contains all manor of notation. Free text was extracted, and normalized by code present in this repository.
 
-## Code
+# Code
 
 Some additional cleaning code and derivative data can be found at [https://github.com/AEADataEditor/aea-demographics](https://github.com/AEADataEditor/aea-demographics).
 

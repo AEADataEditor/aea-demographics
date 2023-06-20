@@ -32,7 +32,7 @@ library(readxl)
 
 ```{r}
 highest_degree <- read_excel(
-  here::here("data", "raw", "memberData.xlsx"), 
+  here::here("data", "raw", "memberData_directory-only.xlsx"), 
   sheet = "Highest Degree",
   col_names = c("degree", "n")
 )
@@ -360,12 +360,12 @@ highest_degree %>%
 ```{r}
 # detailed data
 highest_degree %>%
-  write_csv(here("data", "clean", "highest-degree_detailed.csv"))
+  write_csv(here("data", "clean", "highest-degree_detailed_directory-only.csv"))
 
 # summarized data
 highest_degree %>%
   count(degree_simple, sort = TRUE) %>%
-  write_csv(here("data", "clean", "highest-degree_summarized.csv"))
+  write_csv(here("data", "clean", "highest-degree_summarized_directory-only.csv"))
 
 ```
 
